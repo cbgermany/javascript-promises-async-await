@@ -8,4 +8,8 @@ export function fetchMovies(){
   return fetchWithTimeout(1000).then(resolveFunction);
 }
 
-const moviePromise = fetchMovies()
+const moviePromise = fetchMovies();
+
+console.log(moviePromise().then(resolveCallback));
+
+
