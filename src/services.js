@@ -10,7 +10,13 @@ export function fetchMovies() {
 }
 
 export async function asyncFetchMovies() {
-  
+  try {
+    const response = await fetch('./data/movies.json');
+    const results = await response.json();
+    return results;
+  } catch (error) { 
+    console.log (error);
+  }
 }
 
 export function fetchBooks() {
