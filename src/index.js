@@ -11,5 +11,3 @@ export function fetchMovies(){
 const moviePromise = fetchMovies();
 
 console.log(moviePromise().then(resolveCallback));
-
-
