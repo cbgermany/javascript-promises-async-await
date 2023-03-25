@@ -9,6 +9,10 @@ export function fetchMovies() {
     .catch(error => console.log(error));
 }
 
+export async function asyncFetchMovies() {
+  
+}
+
 export function fetchBooks() {
   return fetch('./data/books.json')
     .then(response => response.json())
