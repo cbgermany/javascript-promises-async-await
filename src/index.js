@@ -33,7 +33,7 @@ async function getBooksOrMoviesAsync() {
   }
   catch(error) {
     console.error('Error waiting for the promise race', error);
-    throw error;
+    return error;
   }
 }
 
@@ -56,8 +56,7 @@ getBooksAndMoviesAsync()
     });
   })
   .catch(error => {
-    console.error("Error in getBooksAndMoviesAsync execution", error)
-    return error;
+    console.error("Error in getBooksAndMoviesAsync execution", error);
   });
 
 
