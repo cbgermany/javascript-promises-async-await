@@ -46,3 +46,16 @@ const getBooksOrMoviesPromise = getBooksOrMovies();
 getBooksOrMoviesPromise.then(results => {
   console.error('getBooksOrMoviesPromise', results);
 });
+
+getBooksAndMoviesAsync().then(results => {
+  console.log('movies AND books', {
+    movies: results.movies,
+    books: results.books,
+  });
+});
+
+getBooksOrMoviesAsync().then(results => {
+  console.log('movies OR books', {
+    results
+  });
+});
