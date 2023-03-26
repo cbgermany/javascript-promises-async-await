@@ -75,11 +75,11 @@ getBooksOrMoviesAsync()
     console.error("Error in getBooksOrMoviesAsync execution", error)
   );
 
-  const timer1 = setTimeout = (() => {
+  const timer1 = setTimeout(() => {
     console.log("timer 1 has finished")
   }, 3000);
 
-  const timer2 = setTimout =(() => {
+  const timer2 = setTimout(() => {
     console.log("timer 2 has finished")
     clearTimeout(timer1)
   }, 2000);
