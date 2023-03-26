@@ -32,7 +32,7 @@ async function getBooksOrMoviesAsync() {
     return values;
   }
   catch(error) {
-    console.log('Error waiting for the promise race', error);
+    console.error('Error waiting for the promise race', error);
   }
 }
 
