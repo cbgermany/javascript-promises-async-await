@@ -17,7 +17,7 @@ async function getBooksAndMoviesAsync() {
     return { books, movies };
   }
   catch(error) {
-    console.log("Error fetching books ans movies", error);
+    console.error("Error fetching books ans movies", error);
   }
 }
 
@@ -44,5 +44,5 @@ const getBooksOrMovies = () => {
 
 const getBooksOrMoviesPromise = getBooksOrMovies();
 getBooksOrMoviesPromise.then(results => {
-  console.log('getBooksOrMoviesPromise', results);
+  console.error('getBooksOrMoviesPromise', results);
 });
